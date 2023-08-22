@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}","./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'josefin':['Josefin Sans']
+      },
+      colors:{
+        'lilac':'#bca3ce',
+        'purple-mag':'#82368C'
+      }
+    },
   },
   plugins: [],
 }
