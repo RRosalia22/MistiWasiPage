@@ -8,10 +8,13 @@ module.exports = {
       },
       colors:{
         'lilac':'#bca3ce',
-        'purple-mag':'#82368C'
+        'purple-mag':'#82368C',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
 
