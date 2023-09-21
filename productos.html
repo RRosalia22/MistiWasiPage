@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos | Misti Wasi</title>
+    <title>Producto | Misti Wasi</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 
@@ -89,117 +89,111 @@
     - @tailwindcss/forms
 -->
 
-    <div class="flex gap-8 ml-5">
-        <div class="relative ">
-            <details class="group [&_summary::-webkit-details-marker]:hidden">
-                <summary
-                    class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600 text-xl">
-                    <span class="font-medium"> Colecciones </span>
-
-                    <span class="transition group-open:-rotate-180">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-4 w-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
-                </summary>
-
-                <div class="z-50 group-open:absolute group-open:start-0 group-open:top-auto group-open:mt-2">
-                    <div class="w-96 rounded border border-gray-200 bg-white">
-                        <header class="flex items-center justify-between p-4">
-                            <span class="text-sm text-gray-700"> 0 Selected </span>
-
-                            <button type="button" class="text-sm text-gray-900 underline underline-offset-4">
-                                Reset
-                            </button>
-                        </header>
-
-                        <ul class="space-y-1 border-t border-gray-200 p-4">
-                            <li>
-                                <label for="FilterInStock" class="inline-flex items-center gap-2">
-                                    <input type="checkbox" id="FilterInStock" class="h-5 w-5 rounded border-gray-300" />
-
-                                    <span class="text-sm font-medium text-gray-700">
-                                        In Stock (5+)
-                                    </span>
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="FilterPreOrder" class="inline-flex items-center gap-2">
-                                    <input type="checkbox" id="FilterPreOrder"
-                                        class="h-5 w-5 rounded border-gray-300" />
-
-                                    <span class="text-sm font-medium text-gray-700">
-                                        Pre Order (3+)
-                                    </span>
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="FilterOutOfStock" class="inline-flex items-center gap-2">
-                                    <input type="checkbox" id="FilterOutOfStock"
-                                        class="h-5 w-5 rounded border-gray-300" />
-
-                                    <span class="text-sm font-medium text-gray-700">
-                                        Out of Stock (10+)
-                                    </span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
+<section class="flex items-center">
+    <div class="max-w-screen-xl px-4 mx-auto lg:px-12 w-full">
+      <div class="relative shadow-sm sm:rounded-lg">
+        <div class="flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4">
+          <div class="w-full md:w-1/2">
+            <form class="flex items-center">
+              <label for="simple-search" class="sr-only"></label>
+              <div class="relative w-full">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                  </svg>
                 </div>
-            </details>
-        </div>
-
-        <div class="relative">
-            <details class="group [&_summary::-webkit-details-marker]:hidden">
-                <summary
-                    class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600 text-xl">
-                    <span class="font-medium"> Precio </span>
-
-                    <span class="transition group-open:-rotate-180">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-4 w-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
-                </summary>
-
-                <div class="z-50 group-open:absolute group-open:start-0 group-open:top-auto group-open:mt-2">
-                    <div class="w-96 rounded border border-gray-200 bg-white">
-                        <header class="flex items-center justify-between p-4">
-                            <span class="text-sm text-gray-700">
-                                The highest price is $600
-                            </span>
-
-                            <button type="button" class="text-sm text-gray-900 underline underline-offset-4">
-                                Reset
-                            </button>
-                        </header>
-
-                        <div class="border-t border-gray-200 p-4">
-                            <div class="flex justify-between gap-4">
-                                <label for="FilterPriceFrom" class="flex items-center gap-2">
-                                    <span class="text-sm text-gray-600">$</span>
-
-                                    <input type="number" id="FilterPriceFrom" placeholder="From"
-                                        class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
-                                </label>
-
-                                <label for="FilterPriceTo" class="flex items-center gap-2">
-                                    <span class="text-sm text-gray-600">$</span>
-
-                                    <input type="number" id="FilterPriceTo" placeholder="To"
-                                        class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                <input type="text" id="simple-search" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400" placeholder="" required="">
+              </div>
+            </form>
+          </div>
+          <div class="flex flex-col items-stretch justify-end flex-shrink-0 w-full space-y-2 md:w-auto md:flex-row md:space-y-0 md:items-center md:space-x-3">
+            <button type="button" class="flex items-center justify-center px-4 py-2 text-sm font-medium text-black rounded-lg  hover:bg-purple-800 focus:ring-purple-100 hover:text-white">
+              <svg class="h-3.5 w-3.5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
+              </svg>
+              Añadir producto
+            </button>
+            <div class="flex items-center w-full space-x-3 md:w-auto">
+              <button id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown" class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg md:w-auto focus:outline-none hover:bg-gray-100 hover:text-purple-900 focus:z-10 focus:ring-4 focus:ring-purple-200" type="button">
+                <svg class="-ml-1 mr-1.5 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path clip-rule="evenodd" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                </svg>
+                Precio
+              </button>
+              <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+                <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mas caro</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mas barato</a>
                 </div>
-            </details>
+              </div>
+              <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown" class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg md:w-auto focus:outline-none hover:bg-gray-100 hover:text-purple-900 focus:z-10 focus:ring-4 focus:ring-purple-200" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-4 mr-2 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" />
+                </svg>
+                Filtro
+                <svg class="-mr-1 ml-1.5 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path clip-rule="evenodd" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                </svg>
+              </button>
+              <div id="filterDropdown" class="z-10 hidden w-48 p-3 bg-white rounded-lg shadow">
+                <h6 class="mb-3 text-sm font-medium text-gray-900">
+                  Coleccion
+                </h6>
+                <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
+                  <li class="flex items-center">
+                    <input id="apple" type="checkbox" value=""
+                      class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-offset-gray-700 focus:ring-2" />
+                    <label for="apple" class="ml-2 text-sm font-medium text-gray-900">
+                      Friendship (56)
+                    </label>
+                  </li>
+                  <li class="flex items-center">
+                    <input id="fitbit" type="checkbox" value=""
+                      class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-offset-gray-700 focus:ring-2" />
+                    <label for="fitbit" class="ml-2 text-sm font-medium text-gray-900">
+                      Summer (56)
+                    </label>
+                  </li>
+                  <li class="flex items-center">
+                    <input id="dell" type="checkbox" value=""
+                      class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-offset-gray-700 focus:ring-2" />
+                    <label for="dell" class="ml-2 text-sm font-medium text-gray-900">
+                      seas shades (56)
+                    </label>
+                  </li>
+                  <li class="flex items-center">
+                    <input id="asus" type="checkbox" value="" checked
+                      class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-offset-gray-700 focus:ring-2" />
+                    <label for="asus" class="ml-2 text-sm font-medium text-gray-900">
+                      Galaxy (97)
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <a href="shop.html">
+                <button  class="flex items-center justify-center w-full px-2 py-2 font-medium text-gray-900 bg-white border border-gray-200 rounded-lg md:w-auto focus:outline-none hover:bg-gray-100 hover:text-purple-900 focus:z-10 focus:ring-4 focus:ring-purple-200" >
+                <span class="w-4 h-4 mr-2 ml-1 text-gray-600 hover:text-purple-900">
+                    <ion-icon name="cart-outline" aria-hidden="true" class="hover:text-purple-900 w-5 h-5" viewBox="0 0 20 20"  ></ion-icon>
+                </span>
+                
+              </button>
+              </a>
+              
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
+  
+  
+
+
+
     <div class="mt-5">
         <div class="ml-5 max-w-2xl px-4 py-16 sm:px-6 sm:py-24 sm:ml-1 lg:max-w-7xl lg:px-8">
             <h2 class="sr-only">Productos</h2>
@@ -207,18 +201,19 @@
             <div class=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                 <a href="#" class="group mb-3">
                     <div
-                        class="aspect-h-1 aspect-w-1 w-80 overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7 md:w-96 md:h-96">
+                        class="aspect-h-1 aspect-w-1 w-80 overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                         <img src="https://picsum.photos/300?random=1"
                             alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                            class="h-full w-full object-cover object-center group-hover:opacity-75 ">
+                            class="h-full w-full object-cover object-center group-hover:opacity-75">
                     </div>
                     <h3 class="mt-4 text-lg text-gray-700">Lana N</h3>
                     <p class="mt-1 text-sm font-medium text-gray-900">Colecion Primavera</p>
                     <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                    
                 </a>
                 <a href="#" class="group mb-3">
                     <div
-                        class="aspect-h-1 aspect-w-1 w-80 overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7 md:w-96 md:h-96">
+                        class="aspect-h-1 aspect-w-1 w-80 overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                         <img src="https://picsum.photos/300?random=2"
                             alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
                             class="h-full w-full object-cover object-center group-hover:opacity-75">
@@ -226,6 +221,7 @@
                     <h3 class="mt-4 text-lg text-gray-700">Lana N</h3>
                     <p class="mt-1 text-sm font-medium text-gray-900">Colecion Primavera</p>
                     <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                    
                 </a>
                 <a href="#" class="group mb-3">
                     <div
@@ -247,7 +243,7 @@
                             class="h-full w-full object-cover object-center group-hover:opacity-75">
                     </div>
                     <h3 class="mt-4 text-lg text-gray-700">Lana N</h3>
-                    <p class="mt-1 text-sm font-medium text-gray-900">Colecion Primavera</p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">Colecion Friendship</p>
                     <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
                     
                 <!--preubas-->
@@ -259,7 +255,7 @@
                             class="h-full w-full object-cover object-center group-hover:opacity-75">
                     </div>
                     <h3 class="mt-4 text-lg text-gray-700">Lana N</h3>
-                    <p class="mt-1 text-sm font-medium text-gray-900">Colecion Primavera</p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">Colecion Friendship</p>
                     <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
                     
                     

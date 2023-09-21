@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar | Misti Wasi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <!--iconos
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href="./dist/output.css" rel="stylesheet">
+
+</head>
+
+<body class="font-josefin bg-slate-100">
+
+    <!--NAV-->
+    <header>
+        <nav class="
+          flex flex-wrap
+          items-center
+          justify-between
+          w-full
+          py-4
+          md:py-0
+          px-4
+          text-lg text-purple-400
+          bg-black">
+            <div>
+                <a href="index.html">
+                    <img src="src/img/logoMW2.png" alt="" class="w-1/3">
+                </a>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block "
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                <ul class="
+              pt-4
+              text-xl text-slate-100
+              md:flex
+              md:justify-between 
+              md:pt-0">
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-purple-700" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-purple-700" href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-purple-700" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-purple-700" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--NAV-->
+
+    <!-- component -->
+<!-- Create By Joker Banny -->
+<style>
+    @layer utilities {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+</style>
+
+  <div class="h-screen pt-10">
+    <h1 class="mb-3 text-center text-2xl font-bold">Items</h1>
+    <div class="mx-4 max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
+      <div class="rounded-lg md:w-2/3">
+        <div class="justify-between mb-3 rounded-lg bg-white p-3 shadow-md sm:flex sm:justify-start">
+          <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="product-image" class="w-1/3 rounded-lg sm:w-40" />
+          <div class="sm:ml-4 sm:flex sm:w-full sm:justify-between">
+            <div class="mt-5 sm:mt-0">
+              <h2 class="text-lg font-bold text-gray-900">Nike Air Max 2019</h2>
+              <p class="mt-1 text-xs text-gray-700">36EU - 4US</p>
+            </div>
+            <div class="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
+              <div class="flex items-center border-gray-100">
+                <span class="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100"> - </span>
+                <input class="h-8 w-8 border bg-white text-center text-xs outline-none" type="number" value="2" min="1" />
+                <span class="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-1000"> + </span>
+              </div>
+              <div class="flex items-center space-x-4">
+                <p class="text-sm">259.000 ₭</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 cursor-pointer duration-150 hover:text-red-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
+          <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80" alt="product-image" class="w-1/3 rounded-lg sm:w-40" />
+          <div class="sm:ml-4 sm:flex sm:w-full sm:justify-between">
+            <div class="mt-5 sm:mt-0">
+              <h2 class="text-lg font-bold text-gray-900">Nike Air Max 2019</h2>
+              <p class="mt-1 text-xs text-gray-700">36EU - 4US</p>
+            </div>
+            <div class="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
+              <div class="flex items-center border-gray-100">
+                <span class="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:text-blue-50"> - </span>
+                <input class="h-8 w-8 border bg-white text-center text-xs outline-none" type="number" value="2" min="1" />
+                <span class="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100  "> + </span>
+              </div>
+              <div class="flex items-center space-x-4">
+                <p class="text-sm">259.000 ₭</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 cursor-pointer duration-150 hover:text-red-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sub total -->
+      <div class="mt-6 mx-3 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3">
+        <div class="mb-2 flex justify-between">
+          <p class="text-gray-700">Subtotal</p>
+          <p class="text-gray-700">$129.99</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-gray-700">Shipping</p>
+          <p class="text-gray-700">$4.99</p>
+        </div>
+        <hr class="my-4" />
+        <div class="flex justify-between">
+          <p class="text-lg font-bold">Total</p>
+          <div class="">
+            <p class="mb-1 text-lg font-bold">$134.98 USD</p>
+            <p class="text-sm text-gray-700">including VAT</p>
+          </div>
+        </div>
+        <button class="mt-6 w-full rounded-md bg-purple-500 py-1.5 font-medium text-white">Check out</button>
+      </div>
+    </div>
+  </div>
+
+
+        <!--FOOTER-->
+        <footer class="text-gray-600 body-font bg-black absolute w-full">
+            <div class="mx-auto w-full max-w-screen-xl">
+                <div class="px-4 py-6 md:flex md:items-center md:justify-between">
+                    <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 Rosalía Reynaga. All Rights
+                        Reserved.
+                    </span>
+                    <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
+                        <a href="#" class="text-purple-400 hover:text-purple-700">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 8 19">
+                                <path fill-rule="evenodd"
+                                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Facebook page</span>
+                        </a>
+                        <a href="#" class="text-purple-400 hover:text-purple-700 ">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z" />
+                            </svg>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+    
+                        <a href="#" class="text-purple-400 hover:text-purple-700">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 11.7c0 6.45-5.27 11.68-11.78 11.68-2.07 0-4-.53-5.7-1.45L0 24l2.13-6.27a11.57 11.57 0 0 1-1.7-6.04C.44 5.23 5.72 0 12.23 0 18.72 0 24 5.23 24 11.7M12.22 1.85c-5.46 0-9.9 4.41-9.9 9.83 0 2.15.7 4.14 1.88 5.76L2.96 21.1l3.8-1.2a9.9 9.9 0 0 0 5.46 1.62c5.46 0 9.9-4.4 9.9-9.83a9.88 9.88 0 0 0-9.9-9.83m5.95 12.52c-.08-.12-.27-.19-.56-.33-.28-.14-1.7-.84-1.97-.93-.26-.1-.46-.15-.65.14-.2.29-.75.93-.91 1.12-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43a8.64 8.64 0 0 1-1.6-1.98c-.18-.29-.03-.44.12-.58.13-.13.29-.34.43-.5.15-.17.2-.3.29-.48.1-.2.05-.36-.02-.5-.08-.15-.65-1.56-.9-2.13-.24-.58-.48-.48-.64-.48-.17 0-.37-.03-.56-.03-.2 0-.5.08-.77.36-.26.29-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.96.14.19 2 3.17 4.93 4.32 2.94 1.15 2.94.77 3.47.72.53-.05 1.7-.7 1.95-1.36.24-.67.24-1.25.17-1.37" />
+                            </svg>
+                            <span class="sr-only">Whatsapp</span>
+                        </a>
+    
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    <script>// Initialization for ES Users
+        import {
+            Collapse,
+            Dropdown,
+            initTE,
+        } from "tw-elements";
+
+        initTE({ Collapse, Dropdown });</script>
+    <script>
+        import {
+            Ripple,
+            Input,
+            initTE,
+        } from "tw-elements";
+
+        initTE({ Ripple, Input });
+
+    </script>
+    <script>
+        const button = document.querySelector('#menu-button');
+        const menu = document.querySelector('#menu');
+
+
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <!--ICONOS https://ionic.io/ionicons/usage-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
