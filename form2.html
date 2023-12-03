@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal | Misti Wasi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <!--iconos
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href="./dist/output.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tipofibra</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+
+
+        <!--iconos
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+        <link href="./dist/output.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- component -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+            :root {
+                --font-family: 'Inter', sans-serif;
+                --font-size: 1rem;
+                --bg: rgb(252, 252, 252);
+
+            }
+
+            html,
+            body {
+                font-family: var(--font-family);
+            }
+
+            body {
+                background-color: var(--bg);
+            }
+
+            .modal.fade .modal-content {
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(1.1);
+            }
+
+            .modal.show .modal-content {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+
+            .modal-content {
+                transform: scale(1.1);
+                transition: visibility 0.25s ease-out, opacity 0.25s ease-out,
+                    transform 0.25s ease-out;
+            }
+
+            /** Modal static */
+
+            .modal.modal-static .modal-content {
+                transform: scale(1.02);
+            }
+        </style>
+
+        <header class="text-gray-600 body-font bg-gray-200">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">Tailblocks</span>
+                </a>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                    <a class="mr-5 hover:text-gray-900">First Link</a>
+                    <a class="mr-5 hover:text-gray-900">Second Link</a>
+                    <a class="mr-5 hover:text-gray-900">Third Link</a>
+                    <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+                </nav>
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main>
+            <!-- component -->
+            <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
+                <div class="container max-w-screen-lg mx-auto">
+                    <div>
+                        <h2 class="font-semibold text-2xl text-gray-600">Formulario de modificacion</h2>
+
+
+                        <div class="rounded p-4 px-4 md:p-8 mb-6">
+                            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                                <div class="text-gray-600">
+
+
+                                </div>
+
+                                <div class="lg:col-span-2">
+                                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                                        <div class="md:col-span-5">
+                                            <label for=""
+                                                class="block text-gray-700 text-sm font-semibold mb-2">Nombre</label>
+                                            <input
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                type="text" name="nombre" id="" placeholder="nombre de producto"
+                                                value="{{ $pr->nombre }}">
+                                        </div>
+                                        <div>
+                                            <img src="{{ url($pr->img) }}" alt="" class="h-auto max-w-full">
+                                            imagen
+
+                                        </div>
+                                        
+                                        <div class="md:col-span-5">
+                                            <label for=""
+                                                class="block text-gray-700 text-sm font-semibold mb-2">Imagen</label>
+                                            <input
+                                                class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                                                type="file" name="img" id="" placeholder="nombre de producto"
+                                                aria-describedby="seleccion archivo">
+                                        </div>
+
+                                        <div class="md:col-span-5">
+                                            <label for=""
+                                                class="block text-gray-700 text-sm font-bold mb-2">Gramos</label>
+                                            <input
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                type="number" name="gramos" id="" placeholder="Gramaje"
+                                                value="{{ $pr->gramos }}">
+                                        </div>
+
+                                        <div class="md:col-span-3">
+                                            <label for="" class="block text-gray-700 text-sm font-semibold mb-2">Palitos
+                                                crochet</label>
+                                            <input
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                type="text" name="palitos_crochet" id=""
+                                                placeholder="Tamaño de crochet " value="{{ $pr->palitos_crochet }}">
+                                        </div>
+
+                                        <div class="md:col-span-2">
+                                            <label for=""
+                                                class="block text-gray-700 text-sm font-semibold mb-2">Precio</label>
+                                            <input
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                type="number" name="precio" id="" placeholder="precio del producto"
+                                                value="{{ $pr->precio }}">
+                                        </div>
+
+                                        <div class="md:col-span-2">
+                                            <label for="" class="block text-gray-700 text-sm font-bold mb-2">Tipo de
+                                                fibra</label>
+                                            <select
+                                                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                                name="tipo_fibra_id" id="" value="{{ $pr->tipo_fibra_id }}">
+                                                @foreach ($listaTF as $tf)
+                                                <option value="{{ $tf->id }}">{{ $tf->tipo_fibra }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+
+                                        <div class="md:col-span-2">
+                                            <label for=""
+                                                class="block text-gray-700 text-sm font-bold mb-2">Existencias</label>
+                                            <input
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                type="number" name="stock" id="" placeholder="existencias del producto"
+                                                value="{{ $pr->stock }}">
+                                        </div>
+
+                                        <div class="md:col-span-1">
+                                            <label for=""
+                                                class="block text-gray-700 text-sm font-bold mb-2">Coleccion</label>
+                                            <select
+                                                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                                name="coleccion_id" id="" value="{{ $pr->coleccion_id }}">
+                                                @foreach ($listaColec as $colec)
+                                                <option value="{{ $colec->id }}">{{ $colec->nombre }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+
+                                        <div class="md:col-span-5">
+                                            <label for="" class="block text-gray-700 text-sm font-bold mb-2">Grosor</label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text" name="grosor" id="" placeholder="grosor del producto"
+                                value="{{ $pr->grosor }}">
+                                            
+                                        </div>
+
+                                        
+
+                                        <div class="md:col-span-5 text-right">
+                                            <div class="inline-flex items-end">
+                                                <button type="submit"
+        class=" hover:bg-blue-700 hover:text-white flex items-center justify-center px-4 font-medium bg-blue-500 text-gray-800 h-9 rounded-md">
+    <span class="flex items-center justify-center space-x-2">Guardar cambios</span>
+</button>
+
+ 
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.buymeacoffee.com/dgauderman" target="_blank"
+                        class="md:absolute bottom-0 right-0 p-4 float-right">
+                        <img src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg"
+                            alt="Buy Me A Coffee"
+                            class="transition-all rounded-full w-14 -rotate-45 hover:shadow-sm shadow-lg ring hover:ring-4 ring-white">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+
+    </body>
+
+
+    <!--SCRIPT NAV BAR RESPONSIVE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    </html>

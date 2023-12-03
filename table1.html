@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <!--iconos
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href="./dist/output.css" rel="stylesheet">
+
+<body>
+    <!-- component -->
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --font-family: 'Inter', sans-serif;
+            --font-size: 1rem;
+            --bg: black;
+
+        }
+
+        html,
+        body {
+            font-family: var(--font-family);
+        }
+
+        body {
+            background-color: var(--bg);
+        }
+
+        .modal.fade .modal-content {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(1.1);
+        }
+
+        .modal.show .modal-content {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        .modal-content {
+            transform: scale(1.1);
+            transition: visibility 0.25s ease-out, opacity 0.25s ease-out,
+                transform 0.25s ease-out;
+        }
+
+        /** Modal static */
+
+        .modal.modal-static .modal-content {
+            transform: scale(1.02);
+        }
+    </style> -->
+
+    <!-- component -->
+    <div class="p-6 overflow-scroll px-7">
+        <table class="mt-4 w-full min-w-max table-auto text-left">
+            <thead>
+                <tr>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Id
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Nombre
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Imagen
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Gramaje
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Palitos/Crochet
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Tipo de fibra
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Precio S/
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Stock
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Coleccion
+                        </p>
+                    </th>
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Grosor
+                        </p>
+                    </th>
+
+                    <th
+                        class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                        <p
+                            class="antialiased font-sans text-lg text-gray-900 flex items-center justify-between gap-2 font-semibold leading-none">
+                            Actions</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+                <td class="p-4">
+                    DATA 1
+                </td>
+
+                <!-- Butons action -->
+                <td class="p-4">
+                    <button
+                    class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs  bg-white hover:bg-yellow-200 hover:text-white "
+                        type="button">
+                        <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                aria-hidden="true" class="h-4 w-4">
+                                <path
+                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <!-- new buttons -->
+                    <!-- <button class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-red-700" type="button">
+                <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                    <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                        <path d="M17 4h-4V2a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v2H1a1 1 0 0 0 0 2h1v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1a1 1 0 1 0 0-2ZM7 2h4v2H7V2Zm1 14a1 1 0 1 1-2 0V8a1 1 0 0 1 2 0v8Zm4 0a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0v8Z"/>
+                    </svg>
+                </span>
+            </button> -->
+                    <button
+                        class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs  bg-white hover:bg-red-700 hover:text-white "
+                        type="button">
+                        <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                            <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 18 20">
+                                <path
+                                    d="M17 4h-4V2a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v2H1a1 1 0 0 0 0 2h1v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1a1 1 0 1 0 0-2ZM7 2h4v2H7V2Zm1 14a1 1 0 1 1-2 0V8a1 1 0 0 1 2 0v8Zm4 0a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0v8Z" />
+                            </svg>
+                        </span>
+                    </button>
+
+
+
+
+
+
+                </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="relative pt-8 pb-6 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-gray-500  py-1">
+                        Made with <a href="https://www.creative-tim.com/product/soft-ui-dashboard-tailwind"
+                            class="text-gray-900 hover:text-gray-800" target="_blank">Soft UI</a> by <a
+                            href="https://www.creative-tim.com" class="text-gray-900 hover:text-gray-800"
+                            target="_blank"> Creative Tim</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--SCRIPT NAV BAR RESPONSIVE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+
+    <script>
+
+        const buttonClose = document.querySelectorAll('[data-dismiss="modal"]')
+        const modal = document.querySelector('.modal')
+        const trigger = document.querySelector('[data-toggle="modal"]')
+
+
+
+        // Static backdrop
+
+        function getStaticClass(modal) {
+            modal.classList.add('astroui-modal-static')
+            document.body.style.overflow = 'hidden'
+            document.body.classList.add('astroui-modal-open')
+            setTimeout(() => {
+                modal.classList.remove('astroui-modal-static')
+            }, 100)
+        }
+
+        // Show modal
+
+        function showModal(modal) {
+            modal.style.display = 'flex'
+            setTimeout(() => {
+                modal.classList.add('show')
+            }, 100)
+            modal.setAttribute('aria-hidden', 'false')
+            document.body.style.overflow = 'hidden'
+            document.body.classList.add('astroui-modal-open')
+        }
+
+
+        // Remove modal
+
+        function dismissModal(modal) {
+            modal.classList.remove('show')
+            setTimeout(() => {
+                modal.style.display = 'none'
+            }, 200)
+            modal.setAttribute('aria-hidden', 'true')
+            document.body.style.overflow = ''
+            document.body.classList.remove('astroui-modal-open')
+        }
+
+        dismissModal(modal)
+
+        //
+        // Function on dismissing modal by button close
+
+        const getDismiss = (buttonClose, modal) => {
+            buttonClose.addEventListener('click', () => {
+                dismissModal(modal)
+            })
+        }
+
+        buttonClose.forEach((buttonClose) => {
+            getDismiss(buttonClose, modal)
+        })
+
+
+        // Open modal
+
+        trigger.addEventListener('click', () => {
+            showModal(modal)
+        })
+
+        // Close modal with press escape
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.classList.contains('show')) {
+                dismissModal(modal)
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

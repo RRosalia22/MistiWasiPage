@@ -90,18 +90,29 @@
                     </button>
                 </header>
                 <main class="relative flex-[1_1_auto] p-4" style="--size: 32rem">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing…</p>
+                    <form id="myForm">
+                        <!-- Agrega tus campos de formulario aquí -->
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username">
+                
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </form>
                 </main>
+                
                 <footer class="flex flex-shrink-0 flex-wrap items-center justify-end flex-row p-4 gap-1"
                     style="--size: 32rem">
                     <button type="button"
                         class="flex items-center justify-center px-4 font-medium bg-gray-200 text-black h-9 rounded-md hover:bg-gray-300 transition-all duration-300"
                         data-dismiss="modal">
-                        <span class="flex items-center justify-center space-x-2">Close</span></button><button
-                        type="button"
-                        class="flex items-center justify-center px-4 font-medium bg-indigo-500 text-white h-9 rounded-md  ">
-                        <span class="flex items-center justify-center space-x-2">Save changes</span>
-                    </button>
+                        <span class="flex items-center justify-center space-x-2">Close</span></button>
+                        <button
+    id="saveChangesButton"
+    type="button"
+    class="flex items-center justify-center px-4 font-medium bg-indigo-500 text-white h-9 rounded-md">
+    <span class="flex items-center justify-center space-x-2">Save changes</span>
+</button>
+
                 </footer>
             </article>
         </div>
@@ -187,6 +198,40 @@
             }
 
         })
+
+        // ...
+
+    // Función para enviar datos
+    function sendData() {
+        // Obtén los datos del formulario
+        const formData = new FormData(document.getElementById('myForm'));
+
+        // Puedes realizar una solicitud AJAX para enviar los datos al servidor
+        // En este ejemplo, simplemente loguearemos los datos en la consola
+        for (const [key, value] of formData.entries()) {
+            console.log(`${key}: ${value}`);
+        }
+
+        // Cierra el modal después de enviar los datos
+        dismissModal(modal);
+    }
+
+    // ...
+
+    // Agrega un event listener al botón "Save changes"
+    // ...
+
+// Agrega un event listener al botón "Save changes" usando el id
+const saveChangesButton = document.getElementById('saveChangesButton');
+saveChangesButton.addEventListener('click', () => {
+    sendData(); // Llama a la función sendData cuando se hace clic en "Save changes"
+});
+
+// ...
+
+
+// ...
+
 
     </script>
 
